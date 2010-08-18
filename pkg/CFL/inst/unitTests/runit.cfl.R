@@ -3,3 +3,8 @@ test.ldc.conj <- function() {
 	checkEquals(ldc.conj(0,1,0,1), 0)
 	checkEquals(ldc.conj(c(0,1,0,1)), 0)
 }
+
+test.something <- function() {
+	read.table("indicadores.txt")
+	
+}
