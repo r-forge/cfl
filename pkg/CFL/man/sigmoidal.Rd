@@ -24,9 +24,9 @@ sigmoidal(x,ganma, beta)
 }
 \details{
 The sigmoidal membership functions is used to fuzzificated values. The formula is:
-S(x,$\alpha,\gamma$)=$\frac{1}{1+e^{-\alpha(x-\gamma)}}$
+\deqn{S(x,\alpha,\gamma)=\frac{1}{1+e^{-\alpha(x-\gamma)}}}{S(x,\alpha,\gamma)=1/(1+e^(-\alpha(x-\gamma)))}
 where:
-$\alpha=\frac{ln(0.9)-ln(0.1)}{\gamma-\beta}$
+\deqn{\alpha=\frac{ln(0.9)-ln(0.1)}{\gamma-\beta}}{\alpha=(ln(0.9)-ln(0.1))(\gamma-\beta)}
 }
 \value{
      The sigmoidal membership functions return a value in the range {[}0...1{]}. 
