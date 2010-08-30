@@ -40,7 +40,7 @@ ldc.conj <-
 	}
 }
 
-ldc.disy<-
+ldc.disj<-
 		function (...){
 	s<-1
 	n <- length(list(...))
@@ -81,6 +81,7 @@ ldc.disy<-
 		}
 	}
 }
+
 
 sigmoidal<-
 		function(x,ganma,beta) {

@@ -1,4 +1,4 @@
-ldc.disy<-
+ldc.disj<-
 		function (...){
 	s<-1
 	n <- length(list(...))

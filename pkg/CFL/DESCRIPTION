@@ -1,11 +1,11 @@
 Package: CFL
 Type: Package
-Title: What the package does (short line)
+Title: Compensatory Fuzzy Logic
 Version: 0.1
 Date: 2010-08-17
-Author: Pablo Michel Marin Ortega
-Maintainer: Who to complain to <yourfault@somewhere.net>
-Description: More about what it does (maybe more than one line)
-License: What license is it under?
+Author: Pablo Michel Marin Ortega, Kornelius Rohmeyer
+Maintainer: pablomo@uclv.edu.cu
+Description: The main results on this project are: a package to analyze the data based on compensatory fuzzy logic algorithms and a reasoner for the compensatory fuzzy logic.
+License: Public Domain
 LazyLoad: yes
 Suggests: RUnit

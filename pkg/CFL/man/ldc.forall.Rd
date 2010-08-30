@@ -1,26 +1,33 @@
-\name{ldc.conj}
-\alias{ldc.conj}
+\name{ldc.forall}
+\alias{ldc.forall}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-ldc.conj%%  ~~function to do ... ~~
+ldc.forall%%  ~~function to do ... ~~
 }
 \description{
-It Calculates the conjuction operator based on compensatory fuzzy logic.
+It Calculates the all operator based on compensatory fuzzy logic
 }
 \usage{
-ldc.conj(...)
-ldc.conj(x)
+ldc.forall(...)
+ldc.forall(x)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{\dots}{
-numeric, complex or logical vectors, in the range 0 to 1.
+matrix or logical vectors, with the values in the range 0 to 1.
 }
 }
 \details{
-The conjunction symbolizes the inclusive use of \textquotedblleft{}and\textquotedblright{}
-in natural language. The mathematical formula is: $\underset{x\in U}{\wedge}p(x)=\sqrt[n]{\underset{x\in U}{\sqcap}p(x)}$.
-p $\wedge$ q is true if and only if both p and q are true. 
+In compensatory fuzzy logic the equivalence is defined by p$\leftrightarrow$q = (p$\rightarrow$q)
+$\wedge$(q$\rightarrow$ p) and the universal and existential quantifiers
+over X are defined by:
+
+$\forall x$ p(x) = $\underset{x\epsilon X}{\wedge}(p(x))$
+
+$\exists x$ p(x) = $\underset{x\epsilon X}{\vee}(p(x))$
+
+These definitions convey the virtues and defects of the conjunction
+and disjunction connectives.
 }
 \value{
 %%  ~Describe the value returned
@@ -28,9 +35,9 @@ p $\wedge$ q is true if and only if both p and q are true.
 %%  \item{comp1 }{Description of 'comp1'}
 %%  \item{comp2 }{Description of 'comp2'}
 %% ...
-     The ldc.conj operator return a value of trust {[}0...1{]}. If values of '...' are outside of the range {[}0...1{]} the
+     The ldc.forall operator return a value of trust {[}0...1{]}. If values of '...' are outside of the range {[}0...1{]} the
      result will be message 'Error...the value is not a value trust'.  Otherwise it is a length-one
-     numeric or complex vector.
+     numeric or vector.
 }
 \references{
 %% ~put references to the literature/web site here ~
@@ -61,11 +68,11 @@ Pablo Michel Marin Ortega, Kornelius Rohmeyer
 %% ~~objects to See Also as \code{\link{help}}, ~~~
 }
 \examples{
-> ldc.conj(0,1,0,1) 
+> ldc.forall(0,1,0,1) 
 {[}1{]} 0
 
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
-\keyword{ ~kwd1 }
-\keyword{ ~kwd2 }% __ONLY ONE__ keyword per line
+\keyword{ forall }
+\keyword{ Compensatory Fuzzy Logic }% __ONLY ONE__ keyword per line

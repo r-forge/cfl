@@ -1,15 +1,15 @@
-\name{ldc.conj}
-\alias{ldc.conj}
+\name{ldc.disj}
+\alias{ldc.disj}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-ldc.conj%%  ~~function to do ... ~~
+ldc.disj%%  ~~function to do ... ~~
 }
 \description{
-It Calculates the conjuction operator based on compensatory fuzzy logic.
+It Calculates the disjunction operator based on compensatory fuzzy logic.
 }
 \usage{
-ldc.conj(...)
-ldc.conj(x)
+ldc.disj(...)
+ldc.disj(x)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -18,9 +18,9 @@ numeric, complex or logical vectors, in the range 0 to 1.
 }
 }
 \details{
-The conjunction symbolizes the inclusive use of \textquotedblleft{}and\textquotedblright{}
-in natural language. The mathematical formula is: $\underset{x\in U}{\wedge}p(x)=\sqrt[n]{\underset{x\in U}{\sqcap}p(x)}$.
-p $\wedge$ q is true if and only if both p and q are true. 
+The conjunction symbolizes the inclusive use of \textquotedblleft{}or\textquotedblright{}
+in natural language. The mathematical formula is: $\underset{x\in U}{\vee}p(x)=1-\sqrt[n]{\underset{x\in U}{\sqcap}p(x)}$.
+p $\vee$ q is false if and only if both p and q are false.
 }
 \value{
 %%  ~Describe the value returned
@@ -28,7 +28,7 @@ p $\wedge$ q is true if and only if both p and q are true.
 %%  \item{comp1 }{Description of 'comp1'}
 %%  \item{comp2 }{Description of 'comp2'}
 %% ...
-     The ldc.conj operator return a value of trust {[}0...1{]}. If values of '...' are outside of the range {[}0...1{]} the
+     The ldc.disj operator return a value of trust {[}0...1{]}. If values of '...' are outside of the range {[}0...1{]} the
      result will be message 'Error...the value is not a value trust'.  Otherwise it is a length-one
      numeric or complex vector.
 }
@@ -61,11 +61,11 @@ Pablo Michel Marin Ortega, Kornelius Rohmeyer
 %% ~~objects to See Also as \code{\link{help}}, ~~~
 }
 \examples{
-> ldc.conj(0,1,0,1) 
+> ldc.disj(0,1,0,1) 
 {[}1{]} 0
 
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
-\keyword{ ~kwd1 }
-\keyword{ ~kwd2 }% __ONLY ONE__ keyword per line
+\keyword{ disjunction }
+\keyword{ Compensatory Fuzzy Logic }% __ONLY ONE__ keyword per line
