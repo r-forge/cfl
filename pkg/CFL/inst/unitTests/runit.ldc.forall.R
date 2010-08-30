@@ -20,5 +20,6 @@ test.ldc.forall <- function() {
 	checkException(ldc.forall(test.bad.vector))
 	checkException(ldc.forall(test.bad.matrix))
 	checkEquals(ldc.forall(test.good.vector), 0)
-	checkEquals(ldc.forall(test.good.matrix), 0)
+	checkTrue(all(0 < ldc.forall(test.good.matrix)))
+	checkTrue(all(ldc.forall(test.good.matrix) < 1))
 }

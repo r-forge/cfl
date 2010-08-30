@@ -19,6 +19,7 @@ test.good.vector<-c(0,1,1)
 test.ldc.exist <- function() {
 	checkException(ldc.exist(test.bad.vector))
 	checkException(ldc.exist(test.bad.matrix))
-	checkEquals(ldc.exist(test.good.vector), 0)
-	checkEquals(ldc.exist(test.good.matrix), 0)
+	checkEquals(ldc.exist(test.good.vector), 1)
+	checkTrue(all(0<ldc.exist(test.good.matrix)))
+	checkTrue(all(ldc.exist(test.good.matrix)<1))
 }

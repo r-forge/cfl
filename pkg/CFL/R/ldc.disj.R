@@ -20,6 +20,9 @@ ldc.disj<-
 	if (n == 1) {
 		if (is.vector((...), mode = "any")) {
 			value<-(...)		
+			if (any(as.vector(value)<0|as.vector(value)>1)) { 
+				stop("Error...the value is not a value trust")
+			}
 			var1<-1-value
 			var2<-prod(var1)
 			var3<-(var2)^(1/length(value))
@@ -28,6 +31,9 @@ ldc.disj<-
 		}
 		if (!is.vector((...), mode = "any")) {
 			value<-	(...)
+			if (any(as.vector(value)<0|as.vector(value)>1)) { 
+				stop("Error...the value is not a value trust")
+			}
 			col<-ncol(value)
 			row<-nrow(value)
 			valor<-matrix(as.matrix(value), nrow=row, ncol=col, byrow=FALSE)
