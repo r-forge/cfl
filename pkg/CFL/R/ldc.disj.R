@@ -31,7 +31,7 @@ ldc.disj<-
 			col<-ncol(value)
 			row<-nrow(value)
 			valor<-matrix(as.matrix(value), nrow=row, ncol=col, byrow=FALSE)
-			var1<-1-valordim
+			var1<-1-valor
 			var2<-apply(var1,2,prod)
 			var3<-(var2)^(1/row)
 			var4<-1-var3
