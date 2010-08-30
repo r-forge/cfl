@@ -60,7 +60,7 @@ Pablo Michel Marin Ortega, Kornelius Rohmeyer
 %% ~~objects to See Also as \code{\link{help}}, ~~~
 }
 \examples{
-> sigmoidal(20,0.5,0.1) 
+sigmoidal(20,0.5,0.1) 
 
 
 }

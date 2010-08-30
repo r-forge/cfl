@@ -1,6 +1,6 @@
 ldc.forall<-
 		function (value){
-	b<-as.vector(a)
+	b<-as.vector(value)
 	if (any(b<0|b>1)) { 
 		stop("Error...the value is not a value trust")
 	}

@@ -68,8 +68,7 @@ Pablo Michel Marin Ortega, Kornelius Rohmeyer
 %% ~~objects to See Also as \code{\link{help}}, ~~~
 }
 \examples{
-> ldc.exist(0,1,0,1) 
-{[}1{]} 0
+ldc.exist(c(0,1,0,1)) 
 
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
