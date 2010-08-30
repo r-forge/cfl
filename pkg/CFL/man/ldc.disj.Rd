@@ -15,9 +15,9 @@ numeric, complex or logical vectors, in the range 0 to 1.
 }
 }
 \details{
-The conjunction symbolizes the inclusive use of \textquotedblleft{}or\textquotedblright{}
-in natural language. The mathematical formula is: $\underset{x\in U}{\vee}p(x)=1-\sqrt[n]{\underset{x\in U}{\sqcap}p(x)}$.
-p $\vee$ q is false if and only if both p and q are false.
+The conjunction symbolizes the inclusive use of \dQuote{\emph{or}}
+in natural language. The mathematical formula is: \eqn{\vee_{x\in U}p(x)=1-\sqrt[n]{\sqcap_{x\in U}p(x)}}{TODO}.
+\eqn{p\vee q}{p or q} is false if and only if both p and q are false.
 }
 \value{
      The ldc.disj operator return a value of trust {[}0...1{]}. If values of '...' are outside of the range {[}0...1{]} the
@@ -38,7 +38,6 @@ para el Razonamiento y la Representaci\'{o}n del Conocimiento en un Ambiente
 de Decisi\'{o}n Multicriterio. In: An\'{a}lisis Multicriterio para la Toma
 de Decisiones: M\'{e}todos y Aplicaciones. Coedici\'{o}n: editorial Plaza
 y Valdes/editorial Universidad de Occidente (2009).
-\end{enumerate}
 }
 \author{
 Pablo Michel Marin Ortega, Kornelius Rohmeyer

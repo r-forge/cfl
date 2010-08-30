@@ -15,7 +15,7 @@ numeric, complex or logical vectors, in the range 0 to 1.
 }
 }
 \details{
-The conjunction symbolizes the inclusive use of \textquotedblleft{}and\textquotedblright{}
+The conjunction symbolizes the inclusive use of \dQuote{\emph{and}}
 in natural language. The mathematical formula is: \eqn{\wedge_{x\in U}p(x)=\sqrt[n]{\sqcap_{x\in U}p(x)}}{TODO}.
 \eqn{p\wedge q}{p and q} is true if and only if both p and q are true. 
 }

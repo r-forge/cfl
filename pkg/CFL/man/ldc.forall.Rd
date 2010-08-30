@@ -15,13 +15,14 @@ matrix or logical vectors, with the values in the range 0 to 1.
 }
 }
 \details{
-In compensatory fuzzy logic the equivalence is defined by p$\leftrightarrow$q = (p$\rightarrow$q)
-$\wedge$(q$\rightarrow$ p) and the universal and existential quantifiers
+In compensatory fuzzy logic the equivalence is defined by
+\eqn{p\leftrightarrow q = (p\rightarrow q)\wedge(q\rightarrow p)}{p<=>q = (p=>q) and (q=>p)} 
+and the universal and existential quantifiers
 over X are defined by:
 
-$\forall x$ p(x) = $\underset{x\epsilon X}{\wedge}(p(x))$
+\deqn{\forall x p(x) = \wedge_{x\in X}(p(x))}{TODO}
 
-$\exists x$ p(x) = $\underset{x\epsilon X}{\vee}(p(x))$
+\deqn{\exists x p(x) = \vee_{x\in X}(p(x))}{TODO}
 
 These definitions convey the virtues and defects of the conjunction
 and disjunction connectives.

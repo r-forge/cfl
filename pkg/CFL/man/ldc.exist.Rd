@@ -20,9 +20,9 @@ In compensatory fuzzy logic the equivalence is defined by
  and the universal and existential quantifiers
 over X are defined by:
 
-$\forall x$ p(x) = $\underset{x\epsilon X}{\wedge}(p(x))$
+\deqn{\forall x p(x) = \wedge_{x\in X}(p(x))}{TODO}
 
-$\exists x$ p(x) = $\underset{x\epsilon X}{\vee}(p(x))$
+\deqn{\exists x p(x) = \vee_{x\in X}(p(x))}{TODO}
 
 These definitions convey the virtues and defects of the conjunction
 and disjunction connectives.
