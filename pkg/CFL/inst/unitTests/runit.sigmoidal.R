@@ -6,5 +6,6 @@ beta.bad<-(2)
 test.sigmoidal <- function() {
 	checkException(sigmoidal(x,ganma.bad, beta.good))
 	checkException(sigmoidal(x,ganma.good, beta.bad))
-	checkEquals(sigmoidal(x,ganma.good,beta.good), 0)
+	checkTrue(all(0 < sigmoidal(x,ganma.good,beta.good)))
+	checkTrue(all(sigmoidal(x,ganma.good,beta.good) < 1))
 	}
