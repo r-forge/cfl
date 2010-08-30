@@ -15,8 +15,9 @@ matrix or logical vectors, with the values in the range 0 to 1.
 }
 }
 \details{
-In compensatory fuzzy logic the equivalence is defined by p$\leftrightarrow$q = (p$\rightarrow$q)
-$\wedge$(q$\rightarrow$ p) and the universal and existential quantifiers
+In compensatory fuzzy logic the equivalence is defined by 
+\eqn{p\leftrightarrow q = (p\rightarrow q)\wedge(q\rightarrow p)}{p<=>q = (p=>q) and (q=>p)}
+ and the universal and existential quantifiers
 over X are defined by:
 
 $\forall x$ p(x) = $\underset{x\epsilon X}{\wedge}(p(x))$
