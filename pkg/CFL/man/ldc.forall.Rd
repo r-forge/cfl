@@ -1,19 +1,16 @@
 \name{ldc.forall}
 \alias{ldc.forall}
-%- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-ldc.forall%%  ~~function to do ... ~~
+ldc.forall
 }
 \description{
 It Calculates the all operator based on compensatory fuzzy logic
 }
 \usage{
-ldc.forall(...)
-ldc.forall(x)
+ldc.forall(value)
 }
-%- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{\dots}{
+  \item{value}{
 matrix or logical vectors, with the values in the range 0 to 1.
 }
 }
@@ -30,17 +27,11 @@ These definitions convey the virtues and defects of the conjunction
 and disjunction connectives.
 }
 \value{
-%%  ~Describe the value returned
-%%  If it is a LIST, use
-%%  \item{comp1 }{Description of 'comp1'}
-%%  \item{comp2 }{Description of 'comp2'}
-%% ...
      The ldc.forall operator return a value of trust {[}0...1{]}. If values of '...' are outside of the range {[}0...1{]} the
      result will be message 'Error...the value is not a value trust'.  Otherwise it is a length-one
      numeric or vector.
 }
 \references{
-%% ~put references to the literature/web site here ~
 \begin{enumerate}
 \item Espin, R., Fern\'{a}ndez, E., Mazcorro, G., Marx-G\'{o}mez J., M.I. Lecich:
 Compensatory Logic: A fuzzy normative model for decision making. Investigaci\'{o}n
@@ -58,20 +49,8 @@ y Valdes/editorial Universidad de Occidente (2009).
 \author{
 Pablo Michel Marin Ortega, Kornelius Rohmeyer
 }
-\note{
-%%  ~~further notes~~
-}
 
-%% ~Make other sections like Warning with \section{Warning }{....} ~
-
-\seealso{
-%% ~~objects to See Also as \code{\link{help}}, ~~~
-}
 \examples{
 ldc.forall(c(0,1,0,1)) 
 
 }
-% Add one or more standard keywords, see file 'KEYWORDS' in the
-% R documentation directory.
-\keyword{ forall }
-\keyword{ Compensatory Fuzzy Logic }% __ONLY ONE__ keyword per line
