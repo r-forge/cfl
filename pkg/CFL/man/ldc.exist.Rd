@@ -11,7 +11,7 @@ ldc.exist(value)
 }
 \arguments{
   \item{value}{
-matrix or logical vectors, with the values in the range 0 to 1.
+numeric, matrix or vectors, in the range 0 to 1.
 }
 }
 \details{

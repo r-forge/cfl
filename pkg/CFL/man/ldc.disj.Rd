@@ -11,7 +11,7 @@ ldc.disj(...)
 }
 \arguments{
   \item{...}{
-numeric, complex or logical vectors, in the range 0 to 1.
+numeric, matrix or vectors, in the range 0 to 1.
 }
 }
 \details{
